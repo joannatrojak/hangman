@@ -16,8 +16,8 @@ def factorial(n):
 
 def countNumbers(f, n): 
     result = f(n)
-#    if f(n)<10:
-#        return '0 '+str(f(n))
+    if f(n)<10:
+        return '0 '+str(f(n))
     
     if result > 10: 
         digits = list(str(result))
