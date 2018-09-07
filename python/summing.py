@@ -1,9 +1,15 @@
 sum = 0
-num = 1
-while nu: 
-    number = int(input('Give me a number: '))
-    sum += num
-    num += 1
+i = 1
+while True: 
+    number = input("Enter a number ")
+    if number == "": 
+        break
+
+    sum += int(number)
+    i += 1
     print(sum)
+
+
+    
     
     
