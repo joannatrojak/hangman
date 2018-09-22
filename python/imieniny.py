@@ -1,5 +1,12 @@
-def imieniny(n, m): 
-    if n -m > 1: 
+def nwd(n, m):
+    while m != 0: 
+        temp = m
+        m = n%m
+        n = temp
+    return n
+def imieniny(n,m): 
+    cukierki =  n - m/nwd(n, m)*m
+    if cukierki > 1: 
         return "Tak"
-    return "NIE"
-print(imieniny(3, 2))
+    return "Nie"
+print(imieniny(55, 22))
